@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+   
+}
+:root{
+    --bg_color:purple;
+    --bg_color:violet;
+    --bg_color:rgb(171, 41, 223);
+    --bg_image:linear-gradient(to  right, rgb(82, 82, 214),purple, rgb(6, 6, 29));;
+    --bg_image3:linear-gradient( rgb(82, 82, 214),purple, rgb(6, 6, 29),rgb(176, 40, 218));;
+    --bg_image2:linear-gradient(purple, rgb(6, 6, 29), rgb(82, 82, 214));;
+    /* --bg_image3:linear-gradient(purple, rgb(6, 6, 29), rgb(82, 82, 214));; */
+    --text_color:white;
+}
+.para{
+ 
+ /* margin-top: 75px; */
+}
+
+/* #para{
+    margin-top: 150px;
+} */
+#navigation{
+    background-color: green;
+    background-color: var(--bg_color);
+    background-image: var(--bg_image);
+   
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    color: var(--text_color);
+    z-index: 9999;
+}
+#nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    list-style: none;
+padding: 15px;
+}
+#navitem{
+    width: 80%;
+    margin: auto;
+}
+#nav  li a{
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+}
+#nav  li{
+    padding:2px;
+}
+#nav  li i{
+    margin-right: 8px;
+    color: white;
+    cursor: pointer;
+}
+#nav li a:hover{
+    color: red;
+}
+#logo{
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 30px;
+    /* margin-right: 15px; */
+}
+
+/* hamberger */
+#hambarger{
+/* border: 1px transparent  rgb(99, 204, 38); */
+
+/* background-color: green;
+background-color: var(--bg_color);
+background-image: var(--bg_image); */
+background-image: var(--bg_image); 
+display: none;
+
+width: 34px;
+ border-radius: 2px;
+padding: 2px; 
+margin-right: 20px;
+}
+.element{
+    background-color: white;
+    padding: 1.4px;
+    margin: 5px;
+}
+#close{
+    /* background-color: green; */
+    background-color: purple;
+    /* background-image: var(--bg_image); */
+    color: white;
+    font-size: 2rem;
+    margin-right: 5px;
+    border: none;
+    display: none;
+}
+
+i{
+    font-size:.9rem;
+}
+/* myprofile  */
+#myprofilebackground{
+    /* background-image: url("https://images.pond5.com/4k-animation-space-stars-and-footage-088243671_prevstill.jpeg");
+    background-image: url("https://i.ytimg.com/vi/eTD0WWFIDAg/maxresdefault.jpg"); */
+    /* background-color: black; */
+    background-image: var(--bg_image2);
+    background-position: bottom;
+ 
+height: 15rem;
+}
+#myprofile{
+    width: 8rem;
+    margin: auto;
+ margin-bottom: 0%;
+    position: relative;
+    top: -60px;
+    border-radius: 50% ; 
+    z-index:10;
+
+    border: 5px solid white;
+    background-image: var(--bg_image3);
+    /* background-color: rgb(101, 51, 238); */
+    /* display: inline-block; */
+
+}
+#mypic{
+    width: 8rem;
+    border-radius: 45% ; 
+    position: relative;
+}
+/* social media links  */
+#links{
+    /* margin: auto;
+    width: 100%; */
+    color:white;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px;
+    /* border: 2px solid red; */
+}
+.account_link{
+    position: relative;
+    top: 0%;
+    z-index: 10000000;
+    color:white;
+    margin: 10px;
+  cursor: pointer;
+  
+}
+.account_link i {
+    /* position: relative;
+    top: -20px;
+    z-index: 10000000; */
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+.account_link  a i {
+    position: relative;
+    top: 0%;
+    z-index: 10000000;
+}
+/* container css */
+
+#container{
+    background-image: var(--bg_image3);
+    /* position: relative; */
+    top: -142px;
+    z-index: -1;
+}
+/* content css */
+.check{
+    width: 100%;
+    height: 100px;
+}
+
+.content{
+    /* background: url("https://cdn.wallpapersafari.com/6/29/qtCfLj.jpg"); */
+    /* -webkit-clip-path: polygon(0 0, 50% 50%, 100% 100%); */
+    /* clip-path: polygon(0% 10%, 100%, 100%, 100% 100%); */
+    /* background: url("https://images.wallpapersden.com/image/download/half-moon-dark-night_bGltbWmUmZqaraWkpJRmbmdlrWZlbWU.jpg"); */
+    /* background-image: url("https://images.pond5.com/4k-animation-space-stars-and-footage-088243671_prevstill.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-size: cover;
+    width: 100%;
+    margin-top: 0px;
+     /* height: 100vh;  */
+     height: 100%;
+    color: white;
+    display: flex;
+    /* font-size: 2rem; */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: black; */
+    /* flex-direction: column; */
+   
+    /* height: 500px; */
+  
+    /* display: none; */
+}
+#myphoto{
+    width:10rem;
+    /* width: 100%; */
+/* width: 18rem; */
+border: 2px solid transparent;
+
+border-radius: 50%;
+    /* height: 120%; */
+    aspect-ratio: 1;
+    /* display: none; */
+}
+#photo{
+    /* width: 30%; */
+    animation: movingleftToright 2s linear 1;
+    position: relative;
+    display: inline-block;
+}
+#name{
+    font-weight: bolder;
+    font-size: 1.7rem;
+
+}
+.text{
+    font-size: 1.7rem;
+}
+#introduction{
+    /* border: 2px solid white; */
+    /* width: 80%; */
+    margin: 10px 20px;
+}
+#welcome{
+    position:relative;
+    animation: movingbottomtoup 2s linear;
+}
+#role{
+    font-weight: bolder;
+    animation: righttoleft 2s liner;
+    color: rgb(255, 255, 0);
+}
+#tocenter{
+    position: relative;
+    top: -20px;
+    display: inline-block;
+    animation:  movingTopToBottom .8s linear;
+    color: white;
+    text-align: center;
+    width: 100%;
+    /* margin: auto; */
+    /* border: 2px solid red; */
+}
+/* scroll button css  */
+#scrolldown  {
+    
+    width: 60px;
+    text-align: center;
+    margin:auto;
+    color: white;
+    margin-top: 20px;
+}
+#scrolldown a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+/* project css */
+.headline{
+    color: white;
+    /* margin: 50px 40px ; */
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    
+}
+#project{
+    /* height: 200px; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+hr{
+    margin-top: 55px;
+}
+.myprojects{
+    min-width: 120px;
+    width: 20%;
+    height: fit-content;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 20px 10px ;
+    text-align: center;
+}
+.projectpic{
+    width: 100px;
+    margin: 5px ;
+    
+}
+.aboutproject{
+    text-align: start;
+    margin: 20px;
+}
+.linkofproject{
+    text-align: center;
+}
+/* about me  */
+#aboutme{
+    color: white;
+    width: 80%;
+    margin:auto;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.inside_about{
+    /* border: 2px solid red; */
+    min-width: 350px;
+    width: 40%;
+    margin: 20px;
+}
+.outer{
+    width: 300px;
+    /* border: 2px solid red; */
+}
+.inner{
+    border-radius: 10px;
+    border: 1px solid red;
+    height: 13px;
+    /* background-color: rgb(255, 255, 0); */
+    background-image: linear-gradient(to bottom left ,yellow,orange,red);
+
+}
+#project_headline{
+    /* height: 50px; */
+}
+@keyframes movingTopToBottom {
+    from{ top: -350px;}
+    to{top: 0px;}
+   }
+ @keyframes movingbottomtoup {
+    from{ bottom: -250px;}
+    to{bottom: 0px;}
+   }
+ @keyframes righttoleft {
+    from{ right: -150px;}
+    to{right: 0px;}
+   }
+ @keyframes movingleftToright {
+    from{ left: -550px;}
+    to{left: 0px;}
+   }
+   /* media queries */
+   @media only screen and (max-width:550px){
+    #navitem{
+        width: fit-content;
+        /* display: none; */
+    }
+    #hambarger{
+        display: block;
+    }
+
+   #nav{
+       display: none;
+   flex-direction: column;
+   }
+   #photo{
+       /* width: .2rem; */
+   }
+   .text{
+    font-size: 1.5rem;
+}
+
+}

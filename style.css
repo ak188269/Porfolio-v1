@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+
+}
+.head{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnI6LoOZbxzTKOaTy1jLT073VK3ZjDmIPJJw&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+}
+#header{
+    /* background: rgba(139, 12, 212, 0.911); */
+    /* background-color: rgba(17, 25, 32, 0.7); */
+    background-color: rgba(10, 18, 36,0.5);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: yellow;
+    color: white;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    /* height: fit-content; */
+    min-height: 25px;
+    padding: 1rem;
+    font-weight: bolder;
+    /* margin-bottom: 20px; */
+    /* animation: change_text_color 10s ease; */
+    /* animation-iteration-count: infinite; */
+    transition: height  2s linear;
+}
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
+.navbar{
+    display: flex;
+    /* display: none; */
+    /* position: fixed; */
+    
+    justify-content: space-evenly;
+    width: 70%;
+    /* align-items: center; */
+    color: yellow;
+    color: white;
+    margin-right: 1rem;
+    /* animation: change_text_color 10s ease; */
+    /* animation-iteration-count: infinite; */
+    /* display: none; */
+}
+.icon{
+    font-size:.9rem;
+}
+
+.show{
+    transition: height  2s linear;
+    display: block;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    margin-left: 38%;
+/* flex-direction: column; */
+/* background-color: rgba(139, 12, 212, 0.3);
+background-color: rgba(15, 14, 15, 0.5); */
+/* background-color: rgba(10, 18, 36,0.5); */
+/* background: hsl(0, 0, 0); */
+/* width: 13rem; */
+/* position: absolute; */
+/* right: -15px;
+top: 0px;  */
+/* left: 100px;  */
+padding: 3rem 3rem;
+padding-right: 0;
+/* padding-bottom: 0%; */
+/* height: 10rem; */
+/* z-index: 3; */
+
+}
+/*  hamberger*/
+#hamberger{
+    width: 25px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    /* left: 30px; */
+    z-index: 4;
+    /* transition: width 2s linear; */
+}
+#open_close_btn{
+    width: 27px;
+
+height: 26px;
+border: 2px solid white;
+border-radius: 80%;
+/* position: absolute; */
+right: 35px;
+top: 20px;
+/* animation: change_border_color 10s ease; */
+/* animation: change_bg 10s ease; */
+/* animation-iteration-count: infinite; */
+
+}
+/* content */
+.content{
+    /* background: url("https://cdn.wallpapersafari.com/6/29/qtCfLj.jpg"); */
+    /* -webkit-clip-path: polygon(0 0, 50% 50%, 100% 100%); */
+    /* clip-path: polygon(0% 10%, 100%, 100%, 100% 100%); */
+    /* background: url("https://images.wallpapersden.com/image/download/half-moon-dark-night_bGltbWmUmZqaraWkpJRmbmdlrWZlbWU.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    width: 100%;
+    margin-top: 0px;
+     height: 100vh; 
+    /* color: white; */
+    display: flex;
+    /* font-size: 2rem; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+   
+    /* height: 500px; */
+    /* display: none; */
+}
+#myphoto{
+    width:13rem;
+    /* width: 100%; */
+/* width: 18rem; */
+border: 2px solid transparent;
+
+border-radius: 50%;
+    /* height: 120%; */
+    aspect-ratio: 1;
+}
+#photo{
+    /* width: 30%; */
+    animation: movingleftToright 1.2s linear 1;
+    position: relative;
+    display: inline-block;
+}
+#name{
+    font-weight: bolder;
+}
+.text{
+    font-size: 3rem;
+}
+#introduction{
+    /* border: 2px solid white; */
+    width: 60%;
+    margin: 10px 20px;
+}
+#welcome{
+    position:relative;
+    animation: movingbottomtoup 2s linear;
+}
+#role{
+    font-weight: bolder;
+    animation: righttoleft 2s liner;
+    color: rgb(255, 255, 0);
+}
+.fun{
+    display: none;
+}
+@keyframes movingTopToBottom {
+   from{ top: -350px;}
+   to{top: 0px;}
+  }
+@keyframes movingbottomtoup {
+   from{ bottom: -250px;}
+   to{bottom: 0px;}
+  }
+@keyframes righttoleft {
+   from{ right: -150px;}
+   to{right: 0px;}
+  }
+@keyframes movingleftToright {
+   from{ left: -150px;}
+   to{left: 0px;}
+  }
+  .container {
+    height: 150px;
+    overflow: hidden;
+  }
+  #name{
+    animation: movingTopToBottom 1.2s linear 1;
+    position: relative;
+    /* top: 0%; */
+    /* background: lightblue; */
+    display: inline-block;
+    padding: 10px;
+  }
+ @keyframes change_border_color{
+     0%{
+         border-color: yellow;
+     }
+     20%{
+         border-color: rgb(36, 197, 21);
+     }
+     40%{
+         border-color: rgb(27, 207, 252);
+     }
+     60%{
+         border-color: white;
+     }
+     80%{
+         
+        border-color: goldenrod;
+     }
+     100%{
+         border-color: yellow;
+     }
+ }
+ @keyframes change_text_color{
+     0%{
+        color: yellow;
+     }
+     20%{
+        color: rgb(29, 207, 44);
+     }
+     40%{
+        color: rgb(27, 207, 252);
+     }
+     60%{
+        color: white;
+     }
+     80%{
+         
+    color: goldenrod;
+     }
+     100%{
+        color: yellow;
+     }
+ }
+ @keyframes change_bg{
+     0%{
+        background-color: yellow;
+     }
+     20%{
+        background-color: rgb(29, 207, 44);
+     }
+     40%{
+        background-color: rgb(27, 207, 252);
+     }
+     60%{
+        background-color: white;
+     }
+     80%{
+         
+    background-color: goldenrod;
+     }
+     100%{
+        background-color: yellow;
+     }
+ }
+ @media screen and (max-width:600px) {
+.navbar{
+    /* display: none; */
+}
+.item{
+    margin-top: 15px;
+}
+#hamberger{
+ 
+    display: block;
+}
+     html{
+         font-size: 13px;
+     }
+ }
+ @media screen and (max-width:450px) {
+     html{
+         font-size: 10px;
+     }
+ }
